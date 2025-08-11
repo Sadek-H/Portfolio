@@ -5,12 +5,15 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React and Tailwind CSS.",
-    image: "https://swiperjs.com/demos/images/nature-1.jpg",
-    liveLink: "https://your-portfolio.netlify.app",
-    sourceLink: "https://github.com/yourusername/portfolio",
-    technologies: ["React", "Tailwind CSS"],
+    title: "Find Roommates",
+    description: [
+      "Users can add, update, delete, and view details of roommate listings.",
+      "Firebase Authentication ensures only logged-in users can manage listings.",
+    ],
+    image: "https://i.postimg.cc/4d09N0Cw/Screenshot-14.png",
+    liveLink: "https://fir-job-4414a.web.app",
+    sourceLink: "https://github.com/Sadek-H/Roommate-Find-Client",
+    technologies: ["React", "Tailwind CSS","React js", "Firebase","Express.js","MongoDB"],
   },
   {
     id: 2,

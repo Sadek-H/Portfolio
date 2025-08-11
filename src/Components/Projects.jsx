@@ -10,9 +10,9 @@ import { Link } from 'react-router';
 const projects = [
   {
     id: 1,
-    title: 'Portfolio Website',
-    description: 'A personal portfolio built with React and Tailwind CSS.',
-    image: 'https://swiperjs.com/demos/images/nature-1.jpg',
+    title: 'Find Roommates',
+    description: 'Find Roommates is a web application that helps users find suitable roommates by allowing them to create profiles, search for available rooms, and connect with potential matches.',
+    image: 'https://i.postimg.cc/4d09N0Cw/Screenshot-14.png',
   },
   {
     id: 2,
