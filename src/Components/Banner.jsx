@@ -5,7 +5,9 @@ import { Link } from "react-router";
 import Lottie from "lottie-react";
 import developer from "../assets/LootieFile/Developer.json";
 import resume from "../assets/resume.pdf";
-const Banner = ({projectsRef }) => {
+import { useScrollRefs } from "../Pages/ScrollContext";
+const Banner = () => {
+    const {  projectsRef } = useScrollRefs();
     const handleScrollToProjects = () => {
         projectsRef.current.scrollIntoView({ behavior: "smooth" });
     }

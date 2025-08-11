@@ -1,7 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { useScrollRefs } from './ScrollContext';
 
 const Navbar = () => {
+   const { aboutRef, skillsRef, contactRef } = useScrollRefs();
+   const handleScrollToAbout = ()=>{
+    aboutRef.current.scrollIntoView({ behavior : "smooth"})
+   }
+
+   const handleScrollToSkills = ()=>{
+       skillsRef.current.scrollIntoView({ behavior : "smooth"})
+   }
+
+   const handleScrollToContact = ()=>{
+       contactRef.current.scrollIntoView({ behavior : "smooth"})
+   }
+
   return (
     <div className='bg-[#0D1117] py-2 px-4 border-b-2  z-50 sticky top-0'>
       <div className="relative z-10 container mx-auto py-4 px-4">
@@ -14,13 +28,13 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <button onClick={handleScrollToAbout}>About</button>
             </li>
             <li>
-              <Link to="/skills">Skills</Link>
+              <button onClick={handleScrollToSkills}>Skills</button>
             </li>
              <li>
-              <Link to="/contact">Contact</Link>
+              <button onClick={handleScrollToContact}>Contact</button>
             </li>
           </ul>
         </div>

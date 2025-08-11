@@ -7,9 +7,12 @@ import {
   RouterProvider,
 } from "react-router";
 import { router } from './Routes/Routes.jsx';
+import { ScrollProvider } from './Pages/ScrollContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ScrollProvider>
+      <RouterProvider router={router} />
+    </ScrollProvider>
   </StrictMode>,
 )
