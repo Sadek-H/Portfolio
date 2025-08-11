@@ -1,16 +1,17 @@
 import React from "react";
-
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router";
 import Lottie from "lottie-react";
 import developer from "../assets/LootieFile/Developer.json";
 import resume from "../assets/resume.pdf";
 import { useScrollRefs } from "../Pages/ScrollContext";
+import { FaDownload } from "react-icons/fa";
+
 const Banner = () => {
-    const {  projectsRef } = useScrollRefs();
-    const handleScrollToProjects = () => {
-        projectsRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+  const { projectsRef } = useScrollRefs();
+  const handleScrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="bg-[#0D1117] relative overflow-hidden">
       {/* Lottie background for mobile (optional) */}
@@ -44,15 +45,19 @@ const Banner = () => {
           </p>
 
           <div className="flex gap-3 justify-center md:justify-start">
-            <button onClick={handleScrollToProjects} className="btn bg-[#00BFFF] border-none text-black hover:bg-blue-400">
+            <button
+              onClick={handleScrollToProjects}
+              className="btn bg-[#00BFFF] border-none text-black hover:bg-blue-400"
+            >
               View Projects
             </button>
 
             <a
               href={resume}
               download
-              className="btn border-none hover:bg-blue-400 text-black"
+              className="btn bg-green-500 border-none hover:bg-green-600 text-black flex items-center gap-2"
             >
+              <FaDownload />
               Resume
             </a>
           </div>
