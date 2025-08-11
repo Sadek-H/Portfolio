@@ -1,5 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiJavascript,
+  SiReact,
+  SiExpress,
+  SiMongodb,
+  SiFirebase,
+  SiJsonwebtokens,
+  SiGithub,
+  SiFigma,
+} from "react-icons/si";
 
 const skills = {
   "Frontend & Backend": [
@@ -8,10 +21,24 @@ const skills = {
     "Tailwind CSS",
     "JavaScript",
     "React.js",
-    "Express.js"
+    "Express.js",
   ],
   "Database & Auth": ["MongoDB", "Firebase", "JWT"],
-  "Tools": ["GitHub", "Figma"]
+  Tools: ["GitHub", "Figma"],
+};
+
+const skillIcons = {
+  HTML: <SiHtml5 className="text-orange-500" size={20} />,
+  CSS: <SiCss3 className="text-blue-600" size={20} />,
+  "Tailwind CSS": <SiTailwindcss className="text-teal-400" size={20} />,
+  JavaScript: <SiJavascript className="text-yellow-400" size={20} />,
+  "React.js": <SiReact className="text-cyan-400" size={20} />,
+  "Express.js": <SiExpress className="text-gray-400" size={20} />,
+  MongoDB: <SiMongodb className="text-green-600" size={20} />,
+  Firebase: <SiFirebase className="text-yellow-500" size={20} />,
+  JWT: <SiJsonwebtokens className="text-purple-600" size={20} />,
+  GitHub: <SiGithub className="text-gray-500" size={20} />,
+  Figma: <SiFigma className="text-pink-500" size={20} />,
 };
 
 const cardVariants = {
@@ -22,8 +49,8 @@ const cardVariants = {
     transition: {
       delay: i * 0.2,
       duration: 0.6,
-      ease: "easeOut"
-    }
+      ease: "easeOut",
+    },
   }),
 };
 
@@ -34,16 +61,18 @@ const headingVariants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const Skils = () => {
   return (
-    <div className="bg-[#0D1117] py-20 px-6 min-h-screen text-white relative z-10 overflow-hidden">
+    <div
+      className="bg-[#0D1117] py-20 px-6 min-h-screen text-white relative z-10 overflow-hidden"
+      id="skills"
+    >
       <div className="max-w-6xl mx-auto relative z-20">
-
         {/* Heading */}
         <motion.h2
           className="text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent"
@@ -73,12 +102,29 @@ const Skils = () => {
               </h3>
               <ul className="space-y-2 text-sm">
                 {items.map((skill, idx) => (
-                  <li
+                  <motion.li
                     key={idx}
-                    className="bg-[#21262D] text-gray-300 px-4 py-2 rounded-md hover:bg-[#30363D] transition duration-200"
+                    className="bg-[#21262D] text-gray-300 px-4 py-2 rounded-md border border-blue-500 cursor-default flex items-center gap-3"
+                    animate={{
+                      boxShadow: [
+                        "0 0 12px 4px rgba(59, 130, 246, 0.3)", 
+                        "0 0 16px 6px rgba(59, 130, 246, 0.45)", 
+                        "0 0 12px 4px rgba(59, 130, 246, 0.3)",
+                      ],
+
+                      scale: [1, 1.03, 1],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
                   >
-                    {skill}
-                  </li>
+                    {skillIcons[skill] || (
+                      <span className="w-5 h-5 inline-block" />
+                    )}
+                    <span>{skill}</span>
+                  </motion.li>
                 ))}
               </ul>
             </motion.div>
