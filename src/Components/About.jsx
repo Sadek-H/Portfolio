@@ -39,37 +39,37 @@ const About = () => {
         </h3>
 
         {/* Short Description */}
-       <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto px-4 md:px-0 text-justify drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] transition-all duration-500">
-  Hi, I’m Sadek Hossen — currently pursuing my B.Sc. in Electrical and
-  Electronic Engineering (EEE). My journey into the world of programming
-  started back in 2021, when I first explored HTML and CSS. At that time, I was just
-  curious about how websites worked, but due to exam{" "}
-  {more && (
-    <>
-      preparation, I had to pause my learning.
-      <br />
-      <br />In 2023, I explored basic C programming and later Java, but I
-      didn’t quite find the excitement I was looking for. Then I returned
-      to web development, this time diving deeper into JavaScript — and
-      everything just clicked. Now, I’m fully committed to building
-      development projects, learning new technologies, and growing my
-      skills every day. I truly enjoy the process of turning ideas into
-      functional, interactive websites and applications.
-      <br />
-      <br />
-      Outside of programming, I’m a big fan of sports — especially
-      football, table tennis, and badminton — and I actively enjoy
-      playing them. These activities keep me energized, competitive, and
-      balanced.
-      <br />
-      <br />
-      I’m passionate, curious, and always eager to learn — whether it’s
-      perfecting a line of code or mastering a new game technique on the
-      court.
-    </>
-  )}
-</p>
-
+        <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto px-4 md:px-0 text-justify drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] transition-all duration-500">
+          Hi, I’m Sadek Hossen — currently pursuing my B.Sc. in Electrical and
+          Electronic Engineering (EEE). My journey into the world of programming
+          started back in 2021, when I first explored HTML and CSS. At that
+          time, I was just curious about how websites worked, but due to exam{" "}
+          {more && (
+            <>
+              preparation, I had to pause my learning.
+              <br />
+              <br />
+              In 2023, I explored basic C programming and later Java, but I
+              didn’t quite find the excitement I was looking for. Then I
+              returned to web development, this time diving deeper into
+              JavaScript — and everything just clicked. Now, I’m fully committed
+              to building development projects, learning new technologies, and
+              growing my skills every day. I truly enjoy the process of turning
+              ideas into functional, interactive websites and applications.
+              <br />
+              <br />
+              Outside of programming, I’m a big fan of sports — especially
+              football, table tennis, and badminton — and I actively enjoy
+              playing them. These activities keep me energized, competitive, and
+              balanced.
+              <br />
+              <br />
+              I’m passionate, curious, and always eager to learn — whether it’s
+              perfecting a line of code or mastering a new game technique on the
+              court.
+            </>
+          )}
+        </p>
 
         {/* Button */}
         <button

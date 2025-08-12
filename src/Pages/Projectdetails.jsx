@@ -13,7 +13,14 @@ const projects = [
     image: "https://i.postimg.cc/4d09N0Cw/Screenshot-14.png",
     liveLink: "https://fir-job-4414a.web.app",
     sourceLink: "https://github.com/Sadek-H/Roommate-Find-Client",
-    technologies: ["React", "Tailwind CSS","React js", "Firebase","Express.js","MongoDB"],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "React js",
+      "Firebase",
+      "Express.js",
+      "MongoDB",
+    ],
   },
   {
     id: 2,
@@ -30,7 +37,13 @@ const projects = [
     image: "https://i.postimg.cc/kGG52Fyz/Screenshot-7.png",
     liveLink: "https://fir-job-4414a.web.app",
     sourceLink: "https://github.com/Sadek-H/Virtual-Bookshelf-Client",
-    technologies: ["Tailwind CSS", "React", "Firebase", "Express.js", "MongoDB"],
+    technologies: [
+      "Tailwind CSS",
+      "React",
+      "Firebase",
+      "Express.js",
+      "MongoDB",
+    ],
   },
   {
     id: 3,

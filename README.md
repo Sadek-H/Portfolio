@@ -18,8 +18,6 @@ A modern, responsive portfolio website built with **React** and **Vite**. Showca
 
 ## Getting Started
 
-
-
 ### Installation
 
 ```sh
@@ -42,11 +40,6 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 ```
 
-### Preview Production Build
-
-```sh
-npm run preview
-```
 
 ## Project Structure
 
