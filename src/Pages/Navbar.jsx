@@ -24,10 +24,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#0D1117] border-b-2 border-gray-800 sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
+      <div className="container mx-auto flex items-center justify-between px-4 py-2">
         {/* Logo */}
         <div className="border-b-2 border-blue-300 shadow-lg rounded-lg">
-         <img src="https://i.postimg.cc/sX03FdFf/aiease-1754956584278.png" className="w-14 h-14" alt="logo" />
+         <img src="https://i.postimg.cc/sX03FdFf/aiease-1754956584278.png" className="w-14 h-13" alt="logo" />
         </div>
 
         {/* Desktop Menu */}

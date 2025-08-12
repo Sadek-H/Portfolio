@@ -72,7 +72,7 @@ const Skils = () => {
       className="bg-[#0D1117] py-20 px-6 min-h-screen text-white relative z-10 overflow-hidden"
       id="skills"
     >
-      <div className="max-w-6xl mx-auto relative z-20">
+      <div className="container mx-auto relative z-20">
         {/* Heading */}
         <motion.h2
           className="text-4xl font-extrabold text-center mb-16 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent"

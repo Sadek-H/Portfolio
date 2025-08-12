@@ -41,7 +41,7 @@ const Contact = () => {
         </p>
       </header>
 
-      <div className="flex flex-col md:flex-row md:justify-center md:gap-16 w-full max-w-6xl">
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-center md:gap-16">
         {/* Contact Form */}
         <div className="bg-white rounded-xl shadow-xl w-full max-w-lg p-10 mx-auto md:mx-0 text-gray-900">
           <h3 className="text-3xl font-semibold mb-8 text-gray-900">Send a Message</h3>
