@@ -1,6 +1,6 @@
 # Sadek Hossen Portfolio
 
-**Live Site:** [https://sadek-portfolio.netlify.app](https://sadek-portfolio.netlify.app)
+**Live Site:** [Visit My Portfolio](https://sadekhossen.netlify.app/)
 
 A modern, responsive portfolio website built with **React** and **Vite**. Showcases projects, skills, and contact information with interactive UI and smooth scrolling.
 
