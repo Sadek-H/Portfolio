@@ -26,9 +26,9 @@ const Navbar = () => {
     <nav className="bg-[#0D1117] border-b-2 border-gray-800 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo */}
-        <h2 className="text-white font-extrabold text-2xl cursor-pointer select-none">
-          <span className="text-orange-600">S</span>adek
-        </h2>
+        <div className="border-b-2 border-blue-300 shadow-lg rounded-lg">
+         <img src="https://i.postimg.cc/sX03FdFf/aiease-1754956584278.png" className="w-14 h-14" alt="logo" />
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex text-white space-x-8 font-semibold">

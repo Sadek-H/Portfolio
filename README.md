@@ -1,12 +1,86 @@
-# React + Vite
+# Sadek Hossen Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site:** [https://sadek-portfolio.netlify.app](https://sadek-portfolio.netlify.app)
 
-Currently, two official plugins are available:
+A modern, responsive portfolio website built with **React** and **Vite**. Showcases projects, skills, and contact information with interactive UI and smooth scrolling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ Fast and optimized with Vite
+- 🎨 Styled using Tailwind CSS & DaisyUI
+- 🖼️ Lottie animations for engaging visuals
+- 📚 Projects carousel (Swiper.js)
+- 📄 Downloadable resume
+- 📬 Contact form with EmailJS integration
+- 🧭 Smooth scroll navigation
+
+## Getting Started
+
+
+
+### Installation
+
+```sh
+git clone https://github.com/Sadek-H/portfolio.git
+cd portfolio
+npm install
+```
+
+### Development
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build
+
+```sh
+npm run build
+```
+
+### Preview Production Build
+
+```sh
+npm run preview
+```
+
+## Project Structure
+
+```
+portfolio/
+├── public/
+│   └── assets/
+├── src/
+│   ├── Components/
+│   ├── Pages/
+│   ├── Layout/
+│   ├── Routes/
+│   ├── assets/
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+## Technologies Used
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+- [Swiper.js](https://swiperjs.com/)
+- [Lottie React](https://lottiefiles.com/)
+- [EmailJS](https://www.emailjs.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Contact
+
+Feel free to reach out via the contact form on the website or connect on [LinkedIn](https://www.linkedin.com/in/sadekhk).
+
+---
+
+&copy; 2025 Sadek
